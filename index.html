@@ -1,112 +1,190 @@
 ﻿﻿
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sion Fallah Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-          integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="CSS/Style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+    <!-- Put your site title here -->
+    <title>
+        Sion Fallah | A Student in Computer Science
+    </title>
+
+    <meta name="description" content="Add small description of yourslef.">
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta name="keywords" content="Put your name, skills and some coding keywords" />
+    <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <header>
+
+    <!-- ***** Header ***** -->
+
+    <header class="header" role="banner" id="top">
+        <div class="row">
+            <nav class="nav" role="navigation">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="header__text-box row">
+            <div class="header__text">
+                <h1 class="heading-primary">
+                    <!-- Replace the following name with your name -->
+                    <span>Sion Fallah</span>
+                </h1>
+                <!-- Put a small paragraph about yourself -->
+                <p>A Student in Computer Science</p>
+
+            </div>
+        </div>
     </header>
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            <strong>I am Sion Fallah</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">A Software Engineering Student</p>
-        <img src="images/HeadShot.jpg"
-             widt="200"
-             height="400" />
+    <main role="main">
+
+        <!-- ***** Work ***** -->
+
+        <section class="work" id="work">
+            <div class="row">
+                <h2>My Work</h2>
+                <div class="work__boxes">
+
+                    <!-- Each div with the work__box class is a project. -->
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>
+                                The current site you are reading.
+                            </p>
+                            <ul class="work__list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                            <div class="work__links">
+                                <a href="https://sionfallah.github.io/" target="_blank" class="link__text">
+                                    Visit Site <span>&rarr;</span>
+                                </a>
+                                <a href="https://github.com/sionfallah/sionfallah.github.io" title="View Source Code" target="_blank">
+                                    <img src="./images/github.svg" class="work__code" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+                        </div>
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Virtual Pet Simulator</h3>
+                            <p>
+                                Object Oriented word based terminal game.
+                            </p>
+                            <ul class="work__list">
+                                <li>C++</li>
+                            </ul>
+
+                            <div class="work__links">
+                             
+                                    
+                                </a>
+                                <a href="https://github.com/sionfallah/VirtualPetSimulator">
+                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="./images/project-2.jpg" class="work__image" alt="Project 1" />
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** Clients ***** -->
+
+        <section class="client" id="clients">
+            <div class="row">
+                <h2>Skills</h2>
+                <div class="client__logos">
+                    <!-- Add logos of the clients or companies you'have worked with. -->
+                    <img src="./images/html5.png" class="client__logo"/>
+                    <img src="./images/CSS.png" class="client__logo"/>
+                    <img src="./images/JS.png" class="client__logo"/>
+                    <img src="./images/Python.png" class="client__logo"/>
+                    <img src="./images/Cplus.png" class="client__logo"/>
+                    <img src="./images/Java.png" class="client__logo"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** About ***** -->
+
+        <section class="about" id="about">
+            <div class="row">
+                <h2>About Me</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <!-- Replace the below paragraph with info about yourself -->
+                        <p>
+                            My name is Sion Fallah, I am a junior here at California Polytechnic Pomona pursuing a bachelors
+                            degree in Computer Science. I am always looking for new ways to get involved whether it is through work
+                            experience or any sort of project, just a way to dive deeper into the field.
+                        </p>
+                        <!-- Provide a link to your resume -->
+                        <a href="SoftwareResume.pdf" download class="btn">My Resume</a>
+                    </div>
+
+                    <div class="about__photo-container">
+                        
+                        <img class="about__photo" src="./images/HeadShot.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
     </section>
-    <!-- /Introduction -->
-    <!-- My Skills -->
-    <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What I Know</h2>
-        <div class="services">
-            <div class="service">
-                <h3>C++</h3>
-                <p>I have completed beginners, advanced, and data structures and algorithms coursework in college.</p>
-            </div> <!-- / service -->
 
-            <div class="service">
-                <h3>HTML/CSS</h3>
-                <p>I completed the full HTML and CSS pathway on the Odin Foundation course. </p>
-            </div> <!-- / service -->
+    <!--  Footer  -->
 
-            <div class="service">
-                <h3>Java</h3>
-                <p>I have an intermediate knowledge of coding in Java </p>
-            </div> <!-- / service -->
-
-            <div class="service">
-                <h3>Python</h3>
-                <p>Have a strong practice of coding in Python as well as knowledge of data structures and algorithms </p>
-            </div> <!-- / service -->
-
-            <div class="service">
-                <h3>Javascript</h3>
-                <p>Made autonomous scripts to complete tasks in Bitburner </p>
-            </div> <!-- / service -->
-
-
-        </div> <!-- / services -->
-
-        <a href="#work" class="btn">My Work</a>
-    </section>
-
-
-    <!-- About me -->
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">About Me</h2>
-
-        <div class="about-me__body">
-            <p>
-                My name is Sion Fallah and I am a computer science major. I spent two years at Glendale Community College, my first as an Aerospace engineering
-                major, then ended up switching to CS my second. I was accepted into Cal Poly Pomona and will be continuing as a
-                Computer Science major.
-            </p>
-            <p>
-                I am an Armenian who was born in Glendale, California. I have lived all my life here in Los Angeles and this is where I also recieved my education.
-                I am currently looking for different opportunities to get more involved in the field and am always looking for internship and research opportunities.
-            </p>
+    <footer role="contentinfo" class="footer">
+        <div class="row">
+            <ul class="footer__social-links">
+                <li class="footer__social-link-item">
+                <li class="footer__social-link-item">
+                    <a href="https://github.com/sionfallah/" title="Link to Github Profile">
+                        <img src="./images/github.svg" class="footer__social-image" alt="Github">
+                    </a>
+                </li>
+                <li class="footer__social-link-item">
+                    <a href="https://www.linkedin.com/in/sion-fallah-865397280/">
+                        <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                    </a>
+                </li>
+            </ul>
+            </div>
         </div>
-
-    </section>
-
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">My work</h2>
-        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-        <p>My Personal Portfolio</p>
-        <p>Virtual Pet Simulator</p>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <a href="mailto:hello@jane.dev" class="footer__link">FallahSion@gmail.com</a>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://www.linkedin.com/in/sion-fallah-865397280">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/SionFallah">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-        </ul>
     </footer>
 
-    <script src="js/index.js"></script>
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+        <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+    </a>
+    <script src="./index.js"></script>
 </body>
+
 </html>
