@@ -402,6 +402,7 @@ body:not(.user-is-tabbing) a:focus {
     height: auto;
     max-width: 100%;
     min-width: 300px;
+    object-fit: scale-down;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
